@@ -1,0 +1,29 @@
+package com.sathya;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class EmployeeBean {
+private int eid;
+private String ename;
+public EmployeeBean() {
+}
+public int getEid() {
+	return eid;
+}
+public void setEid(int eid) {
+	this.eid = eid;
+}
+public String getEname() {
+	return ename;
+}
+public void setEname(String ename) {
+	this.ename = ename;
+}
+public void details() {
+	
+	System.out.println("my id:"+eid);
+	System.out.println("ny name:"+ename);
+	
+}
+}

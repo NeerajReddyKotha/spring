@@ -1,0 +1,8 @@
+package com.sathya;
+
+public class CustomerBean {
+	public  CustomerBean() {
+
+	}
+
+}

@@ -1,0 +1,40 @@
+package com.sathya;
+
+public class Consumer {
+private int cid;
+private String cname;
+private int previous_reading;
+private int current_reading;
+public Consumer() {
+}
+public int getCid() {
+	return cid;
+}
+public void setCid(int cid) {
+	this.cid = cid;
+}
+public String getCname() {
+	return cname;
+}
+public void setCname(String cname) {
+	this.cname = cname;
+}
+public int getPrevious_reading() {
+	return previous_reading;
+}
+public void setPrevious_reading(int previous_reading) {
+	this.previous_reading = previous_reading;
+}
+public int getCurrent_reading() {
+	return current_reading;
+}
+public void setCurrent_reading(int current_reading) {
+	this.current_reading = current_reading;
+}
+public void electricityBill() 
+{
+	
+	
+}
+
+}

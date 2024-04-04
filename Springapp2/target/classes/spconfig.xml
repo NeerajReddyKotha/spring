@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+  
+<bean id="id1" class="com.yakub.Employee">  
+<property name="empid" value="100"></property>
+<property name="empname" value="kishan"></property>  
+<property name="salary" value="1000.0"></property>
+<property name="designation" value="developer"></property>
+
+</bean>  
+  
+</beans>  

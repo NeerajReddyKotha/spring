@@ -1,0 +1,31 @@
+package com.sathya;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+
+public class StudentBean {
+private JdbcTemplate jt;
+
+public StudentBean() {
+}
+
+public JdbcTemplate getJt() {
+	return jt;
+}
+
+public void setJt(JdbcTemplate jt) {
+	this.jt = jt;
+}
+public void detais() {
+	jt.execute("create table studentbean1(id number,name varchar2(30),email varchar2(30),address varchar2(30))");
+	System.out.println("table created");
+} 
+public void insertmethod() {
+//int i=	jt.update("insert into studentbean1 values(101,'kishan','kishan@gamil.com','warangal')");
+//int i=jt.update("insert into studentbean1 values(102,'rudra','rudra@gmail.com','hanamkonda')");
+//jt.update("insert into studentbean1 values(103,'bhavani','bhavani@gmil.com','hasanparthy')");
+//jt.update("insert into studentbean1 values(104,'prasad','prasad@gmail.com','nagaram')");
+jt.update("insert into studentbean1 values(105,'chintu','chintu@gmail.com','assam')");
+	System.out.println("data inserted:");
+
+}
+}

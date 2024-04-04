@@ -1,0 +1,12 @@
+package com.sathya;
+
+import java.util.Scanner;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+public class JavaConfig {
+
+	
+	
+}

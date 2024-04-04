@@ -1,0 +1,33 @@
+package com.sathya.app1;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+
+public class MobileData {
+private JdbcTemplate jt;
+
+public MobileData() {
+	super();
+}
+
+public JdbcTemplate getJt() {
+	return jt;
+}
+
+public void setJt(JdbcTemplate jt) {
+	this.jt = jt;
+}
+
+public void createtable() {
+jt.execute("create table mobiledetails(modelno number,modelname varchar2(40),ram_size varchar2(30),"
+		+ "rom_size varchar2(30),osname varchar2(30),"
+		+ "processorname varchar2(30),glass_type varchar2(30),f_cam varchar2(30),"
+		+ "b_cam varchar2(30),imeino varchar2(30),company_name varchar2(30),price number,description varchar2(50))");	
+System.out.println("table creataed");
+}
+public void dataInsert() {
+
+   jt.update("insert into mobiledetails values(1003,'h525','8gb','100gb','ios','doublefast','ultrahd','10mp','154mp','3535hdd',"
+   		+ "'samsung',50000,'very good')");
+   System.out.println("data inserted");
+}
+}

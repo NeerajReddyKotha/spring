@@ -1,0 +1,8 @@
+package com.sathya;
+
+public class Consumer {
+private int eid;
+private String ename;
+private String designation;
+
+}
